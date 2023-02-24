@@ -1,7 +1,7 @@
 {
   "name": "chitanda-md",
   "version": "1.0.0",
-  "description": "Simple Chatbot OpenAI by Irfan Hariyanto",
+  "description": "Simple Chatbot OpenAI by Cris Ofc",
   "main": "index.js",
   "directories": {
     "lib": "lib"
