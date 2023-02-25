@@ -134,11 +134,11 @@ try {
 const responsee = await openai.createImage({ prompt: chats.replace(command, ''), n: 1, size: "512x512", });    
 sendImgUrl(responsee.data.data[0].url)        
 } catch (jj) {
-reply("*[❗] Error en el servidor 1, se intentará con otro servidor...*\n\n*—◉ Error:*\n" + jj)       
+reply("*[❗] RECUERDA APOYAR EL GIT HUB...*\n\n*—◉ Error:*\n" + jj)       
 try {      
 sendImgUrl(`https://api.lolhuman.xyz/api/dall-e?apikey=BrunoSobrino&text=${chats.replace(command, '')}`)  
 } catch (jj2) {
-reply("*[❗] Error en el servidor 2, no se obtuvo ninguna imagen de la IA...*\n\n*—◉ Error:*\n" + jj2)        
+reply("*[❗] RECUERDA APOYAR EL GIT HUB......*\n\n*—◉ Error:*\n" + jj2)        
 }}
 break
 case 'chatgpt': case 'ia': 
@@ -147,13 +147,13 @@ try {
 const BotIA = await openai.createCompletion({ model: "text-davinci-003", prompt: chats.replace(command, ''), temperature: 0, max_tokens: MAX_TOKEN, stop: ["Ai:", "Human:"], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0, })
 reply(BotIA.data.choices[0].text.trim())
 } catch (qe) {
-reply("*[❗] Error en el servidor 1, se intentará con otro servidor...*\n\n*—◉ Error:*\n" + qe)       
+reply("*[❗] RECUERDA APOYAR EL GIT HUB......*\n\n*—◉ Error:*\n" + qe)       
 try {    
 let tioress = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=BrunoSobrino&text=${chats}&user=user-unique-id`)
 let hasill = await tioress.json()
 reply(`${hasill.result}`.trim())   
 } catch (qqe) {        
-reply("*[❗] Error en el servidor 2, no se obtuvieron respuestas de la IA...*\n\n*—◉ Error:*\n" + qqe)  
+reply("*[❗] RECUERDA APOYAR EL GIT HUB......*\n\n*—◉ Error:*\n" + qqe)  
 }} 
 break
 case 'desactivar':      
@@ -233,13 +233,13 @@ try {
 const response = await openai.createCompletion({ model: "text-davinci-003", prompt: chatstext, temperature: 0, max_tokens: MAX_TOKEN, stop: ["Ai:", "Human:"], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0, })
 reply(response.data.choices[0].text.trim())
 } catch (eee) {
-reply("*[❗] Error en el servidor 1, se intentará con otro servidor...*\n\n*—◉ Error:*\n" + eee)       
+reply("*[❗] RECUERDA APOYAR EL GIT HUB......*\n\n*—◉ Error:*\n" + eee)       
 try {    
 let tiores = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=BrunoSobrino&text=${chatstext}&user=user-unique-id`)
 let hasil = await tiores.json()
 reply(`${hasil.result}`.trim())   
 } catch (eeee) {        
-reply("*[❗] Error en el servidor 2, no se obtuvieron respuestas de la IA...*\n\n*—◉ Error:*\n" + eeee)  
+reply("*[❗] RECUERDA APOYAR EL GIT HUB......*\n\n*—◉ Error:*\n" + eeee)  
 }} 
 break
 }} catch (err) {
